@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="Learn-JavaAgent:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Learn_JavaAgent_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Learn-JavaAgent.jar">
+        <element id="module-output" name="Learn-JavaAgent" />
+      </element>
+    </root>
+  </artifact>
+</component>
