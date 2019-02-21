@@ -7,5 +7,9 @@ import java.lang.instrument.Instrumentation;
 public class AgentDemo {
     public static void premain(String arg, Instrumentation instrumentation) {
         System.err.println("方法 premain 参数：" + arg + ";instrumentation");
+        instrumentation.addTransformer((loader, className, classBeingRedefined, protectionDomain, classfileBuffer) -> {
+            System.out.println("premain load Class     :" + className);
+            return classfileBuffer;
+        }, true);
     }
 }
